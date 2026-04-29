@@ -1,4 +1,157 @@
-git init
-git add index.html
-git commit -m "Siber ajans yayına hazır"
-git branch -M main
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    
+    <title>Zırhlı Dijital | Güvenli Web Tasarım & Profesyonel Google Ads Uzmanı</title>
+    <meta name="description" content="Zırhlı Dijital ile işletmenizi büyütün. Türkiye geneli SEO uyumlu web tasarım, profesyonel Google Ads yönetimi ve Mercedes-Benz onaylı siber güvenlik çözümleri.">
+    <meta name="keywords" content="web tasarım, google ads yönetimi, siber güvenlik, sızma testi, güvenli web sitesi, google reklam uzmanı, zirhli dijital">
+    <link rel="canonical" href="https://zirhlidijital.com.tr">
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "Zırhlı Dijital",
+      "image": "https://zirhlidijital.com.tr/logo.png",
+      "url": "https://zirhlidijital.com.tr",
+      "telephone": "+90541451674",
+      "priceRange": "$$",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Türkiye Geneli Hizmet",
+        "addressLocality": "Istanbul",
+        "addressCountry": "TR"
+      },
+      "serviceType": ["Web Tasarım", "Google Ads", "Siber Güvenlik"]
+    }
+    </script>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    
+    <style>
+        :root {
+            --neon-blue: #00d2ff;
+            --neon-green: #39ff14;
+            --dark-bg: #020202;
+            --glass: rgba(255, 255, 255, 0.05);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+
+        body { 
+            background-color: var(--dark-bg); 
+            color: #fff; 
+            font-family: 'Inter', -apple-system, sans-serif;
+            overflow-x: hidden;
+            padding-bottom: 70px; /* Alt bar için boşluk */
+        }
+
+        /* Arka Plan Grid Efekti */
+        .bg-grid {
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            background-image: linear-gradient(rgba(0, 210, 255, 0.03) 1px, transparent 1px),
+                              linear-gradient(90deg, rgba(0, 210, 255, 0.03) 1px, transparent 1px);
+            background-size: 30px 30px; z-index: -1;
+        }
+
+        /* Hero Bölümü */
+        header {
+            padding: 60px 20px 40px; text-align: center;
+            background: radial-gradient(circle at top, rgba(0, 210, 255, 0.1), transparent);
+        }
+
+        .logo { font-size: 1.8rem; font-weight: 900; letter-spacing: 2px; margin-bottom: 20px; }
+        .logo span { color: var(--neon-green); text-shadow: 0 0 10px var(--neon-green); }
+
+        h1 { font-size: 2.2rem; line-height: 1.2; margin-bottom: 15px; }
+        .highlight { color: var(--neon-blue); }
+
+        /* AI Analiz Kartı */
+        .ai-box {
+            background: var(--glass); border: 1px solid var(--neon-blue);
+            margin: 20px; padding: 25px; border-radius: 20px;
+            box-shadow: 0 0 20px rgba(0, 210, 255, 0.2);
+            text-align: center;
+        }
+
+        /* Paket Kartları (Mobil Kaydırma) */
+        .scroll-container {
+            display: flex; overflow-x: auto; gap: 20px; padding: 20px;
+            scroll-snap-type: x mandatory; scrollbar-width: none;
+        }
+        .scroll-container::-webkit-scrollbar { display: none; }
+
+        .p-card {
+            min-width: 280px; background: #0a0a0a; border: 1px solid #1a1a1a;
+            padding: 30px; border-radius: 25px; scroll-snap-align: center;
+            transition: 0.3s;
+        }
+        .p-card.active { border-color: var(--neon-green); box-shadow: 0 0 15px rgba(57, 255, 20, 0.1); }
+
+        /* Mobil Alt Navigasyon (Profesyonel App Hissi) */
+        .mobile-nav {
+            position: fixed; bottom: 0; left: 0; width: 100%;
+            background: rgba(0, 0, 0, 0.95); backdrop-filter: blur(10px);
+            display: flex; justify-content: space-around; padding: 12px 0;
+            border-top: 1px solid #1a1a1a; z-index: 1000;
+        }
+        .nav-link { color: #666; text-decoration: none; font-size: 0.75rem; text-align: center; }
+        .nav-link.active { color: var(--neon-blue); }
+        .nav-link i { display: block; font-size: 1.3rem; margin-bottom: 4px; }
+
+        .btn-wp { background: #25d366; color: #fff; padding: 12px 25px; border-radius: 50px; text-decoration: none; font-weight: bold; display: inline-block; margin-top: 15px; }
+    </style>
+</head>
+<body>
+
+    <div class="bg-grid"></div>
+
+    <header>
+        <div class="logo">ZIRHLI<span>DİJİTAL</span></div>
+        <h1>Türkiye'nin <span class="highlight">Zırhlı</span> Teknoloji Ajansı</h1>
+        <p style="color:#888;">Google Reklam Gücü & Siber Savunma Hattı Bir Arada.</p>
+    </header>
+
+    <div class="ai-box">
+        <h3 style="color:var(--neon-green); margin-bottom:10px;"><i class="fas fa-robot"></i> AI ANALİZ MOTORU</h3>
+        <p style="font-size:0.9rem; margin-bottom:15px;">Web sitenizin güvenlik ve reklam skorunu yapay zeka ile ölçün.</p>
+        <a href="https://wa.me/90541451674" class="btn-wp" style="background:var(--neon-blue); color:#000;">TARAMAYI BAŞLAT</a>
+    </div>
+
+    <div class="scroll-container">
+        <div class="p-card">
+            <h4 style="color:var(--neon-blue)">SİBER KALKAN</h4>
+            <p style="font-size:0.8rem; color:#666;">Küçük İşletme Başlangıç</p>
+            <div style="font-size:1.5rem; margin:15px 0;">Hemen Başla</div>
+            <ul style="list-style:none; font-size:0.85rem; color:#aaa;">
+                <li><i class="fas fa-check"></i> SEO Uyumlu Site</li>
+                <li><i class="fas fa-check"></i> SSL Güvenlik</li>
+            </ul>
+        </div>
+        <div class="p-card active">
+            <h4 style="color:var(--neon-green)">SİBER KALE</h4>
+            <p style="font-size:0.8rem; color:#666;">KOBİ Büyüme Paketi</p>
+            <div style="font-size:1.5rem; margin:15px 0;">Popüler</div>
+            <ul style="list-style:none; font-size:0.85rem; color:#aaa;">
+                <li><i class="fas fa-check"></i> Google Ads Yönetimi</li>
+                <li><i class="fas fa-check"></i> Sızma Testi Raporu</li>
+            </ul>
+        </div>
+    </div>
+
+    <footer style="text-align:center; padding:40px 20px; font-size:0.8rem; color:#444;">
+        <p>&copy; 2026 Zırhlı Dijital Solutions | Türkiye Geneli Siber Savunma</p>
+        <p style="margin-top:10px;">License: Fixed Template | Agent: Timur</p>
+    </footer>
+
+    <nav class="mobile-nav">
+        <a href="#" class="nav-link active"><i class="fas fa-shield-alt"></i>Ana Sayfa</a>
+        <a href="https://wa.me/90541451674" class="nav-link"><i class="fab fa-whatsapp"></i>Mesaj At</a>
+        <a href="tel:+90541451674" class="nav-link"><i class="fas fa-phone-alt"></i>Hemen Ara</a>
+        <a href="https://wa.me/90541451674" class="nav-link"><i class="fas fa-microchip"></i>AI Analiz</a>
+    </nav>
+
+</body>
+</html>
